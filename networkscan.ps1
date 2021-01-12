@@ -1,5 +1,4 @@
-## Q:\Test\2017\01\21\SO_41785413.ps1
-$FileOut = ".\Computers.csv"
+$FileOut = ".\hosts.csv"
 ## Ping subnet
 $Subnet = "192.168.xyz."
 1..254|ForEach-Object{
@@ -17,4 +16,3 @@ ForEach ($Computer in $Computers){
 }
 $Computers
 $Computers | Export-Csv $FileOut -NotypeInformation
-#$Computers | Out-Gridview
